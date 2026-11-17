@@ -1,0 +1,433 @@
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/Luoyang.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+nav {
+    background-color: #f4e2e5;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    color: #5c4f47;
+    font-family: "Shantell Sans", Arial, sans-serif;
+}
+
+nav a:hover {
+    background-color: #ecc9cf;
+}
+
+nav a.active {
+    background-color: #5c4f47;
+    color:white;
+}
+
+nav a :visited {
+    color: #5c4f47;
+}
+
+.skip-link {
+    position:absolute;
+    left: -9999px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5c4f47;
+    background-color: #fffbf5;
+    line-height: 1.6;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 1rem 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#5c4f47;
+}
+
+header h1 {
+    color:white;
+    font-family: "Caveat", cursive;
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+header p {
+    font-family: "Caveat", cursive;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.intro {
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #f4e2e5;
+}
+
+.video {
+    background-color: #5c4f47;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    max-width: none; 
+    margin: 3rem 0;
+}
+
+.video-title {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.video details {
+    margin-top: 1rem;
+}
+
+.video video,
+.video figcaption {
+    display: block;
+    width: 100%;
+    max-width: 45rem;
+    margin: 0 auto;
+}
+
+.city-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.city-list article {
+    
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #f4e2e5;
+    display: flex;
+    flex-direction: column;
+}
+
+.city-list figure {
+    margin-top: auto;
+}
+
+@media (min-width: 40rem) {
+    .city-list {
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 64rem) {
+    .city-list {
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.city-list img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.city-list h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #a0566b;
+}
+
+a:visited {
+    color: #6e3446;
+}
+
+.trip {
+    text-align: center;
+    background-color: #ecc9cf;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.trip p {
+    max-width: 40rem;
+    margin: 1rem auto;
+}
+
+.button, .button:visited {
+    display: inline-block;
+    background-color: #a0566b;
+    color:white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #6e3446;
+}
+
+main section {
+    margin: 3rem 0;
+}
+
+footer {
+    background-color: #f4e2e5;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-style: italic;
+}
+
+/*====cities page====*/
+.attractions article, .foods article {
+    background-color: #f4e2e5;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width:40rem) {
+    .attractions article, .foods article {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .text {
+        flex: 1;
+    }
+
+    .attractions figure, .foods figure {
+        flex: 0 0 15rem;
+        margin: 0;
+    }
+}
+
+.text h4 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.tips {
+    border-left: 0.3rem solid #a0566b;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.attractions img, .foods img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 100%;
+}
+
+main > h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.attractions h3, .foods h3, .tips h3 {
+    font-size: 1.5rem;
+}
+
+
+/*=====trip page=====*/
+.daily ol {
+    list-style: none;
+    background-color: #f4e2e5;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ecc9cf;
+}
+
+th {
+    background-color: #5c4f47;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f4e2e5;
+}
+
+caption {
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+summary {
+    cursor: pointer;
+}
+
+
+/*=====form page=====*/
+fieldset {
+    background-color: #f4e2e5;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+form div {
+    margin-bottom: 0.75rem;
+}
+
+label {
+    display: block;
+}
+
+input[type="radio"] + label, input[type="checkbox"] + label {
+    display: inline;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 0.5rem;
+    border: 1px solid #ecc9cf;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #a0566b;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #6e3446;
+}
+
+input[type="reset"] {
+    background-color: white;
+    color: #a0566b;
+    border: 2px solid #a0566b;
+}
+
+body.high-contrast {
+    background-color: black;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.high-contrast h1, .high-contrast h2,
+.high-contrast h3, .high-contrast h4 {
+    color: white;
+}
+
+.high-contrast a, .high-contrast a:visited {
+    color: yellow;
+}
+
+.high-contrast nav, .high-contrast footer,
+.high-contrast .intro, .high-contrast .video,
+.high-contrast .trip, .high-contrast article,
+.high-contrast .tips, .high-contrast .daily ol,
+.high-contrast fieldset, .high-contrast tbody tr {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.high-contrast nav a.active {
+    background-color: yellow;
+    color: black;
+}
+
+#contrast-toggle {
+    display: block;
+    margin: 1rem 0 0 auto; 
+    background-color: white;
+    color: #a0566b;
+    border: 2px solid #a0566b;
+    border-radius: 2rem;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.high-contrast #contrast-toggle {
+    background-color: black;
+    color: yellow;
+    border-color: yellow;
+}
+
+/*=====print style=====*/
+
+@media print {
+    nav, #contrast-toggle, .video {
+        display : none;
+    }
+
+    img {
+        width: 8rem !important;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    header h1, header p {
+        color: black;
+        text-shadow: none;
+    }
+}
+
+article figcaption, .credit {
+    font-style: italic;
+    font-size: 0.85rem;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Henan - Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header>
+        <h1>Discover Henan</h1>
+        <p>My 7-Day Travel Plan Through History, Culture &amp; Food</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Homepage</a>
+            </li>
+            <li>
+                <a href="zhengzhou.html">Zhengzhou</a>
+            </li>
+            <li>
+                <a href="luoyang.html">Luoyang</a>
+            </li>
+            <li>
+                <a href="kaifeng.html">Kaifeng</a>
+            </li>
+            <li>
+                <a href="trip.html">My 7-Day Trip</a>
+            </li>
+            <li>
+                <a class="active" href="form.html">Form</a>
+            </li>
+        </ul>
+    </nav>
+    <button type="button" id="contrast-toggle">High Contrast</button>
+
+    <main id="main-content">
+        <section class="form-intro">
+            <h2>Share Your Travel Ideas</h2>
+            <p>Are you interested in visiting Henan? Which city would you like to explore the most? Please fill out the form below to share your travel preferences and suggestions!</p>
+        </section>
+
+        <form action="mailto:jiaqianbp@gmail.com" method="post" enctype="text/plain">
+            <fieldset>
+                <legend>Travel Preferences</legend>
+                <p>Which city in Henan would you most like to visit?</p>
+                <div>
+                    <input type="radio" id="city-zhengzhou" name="city" value="zhengzhou">
+                    <label for="city-zhengzhou">Zhengzhou</label>
+                </div>
+                <div>
+                    <input type="radio" id="city-luoyang" name="city" value="luoyang">
+                    <label for="city-luoyang">Luoyang</label>
+                </div>
+                <div>
+                    <input type="radio" id="city-kaifeng" name="city" value="kaifeng">
+                    <label for="city-kaifeng">Kaifeng</label>
+                </div>
+                <div>
+                    <input type="radio" id="city-other" name="city" value="other">
+                    <label for="city-other">Other</label>
+                </div>
+
+
+                <p>What do you enjoy most when travelling?</p>
+                <div>
+                    <input type="checkbox" id="interest-history" name="interests" value="history">
+                    <label for="interest-history">Historical attractions</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="interest-nature" name="interests" value="nature">
+                    <label for="interest-nature">Nature and scenery</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="interest-food" name="interests" value="food">
+                    <label for="interest-food">Local food</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="interest-culture" name="interests" value="culture">
+                    <label for="interest-culture">Cultural experiences</label>
+                </div>
+    
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Suggestions</legend>
+
+                <div>
+                    <label for="place">Recommended Place or Food</label>
+                    <input type="text" id="place" name="place" size="40" maxlength="100">
+                </div>
+                <div>
+                    <label for="suggestions">Your Travel Suggestions</label>
+                    <textarea id="suggestions" name="suggestions" rows="6" cols="40" maxlength="500"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" size="30" maxlength="50">
+                </div>
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" size="30" maxlength="80">
+                </div>
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">I'd like to subscribe to a newsletter</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Send</legend>
+                <input type="submit" value="Send My Ideas">
+                <input type="reset" value="Clear Form">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>Author: Hu Jiaqian (<a href="mailto:jiaqianbp@gmail.com">jiaqianbp@gmail.com</a>)</p>
+        <p>Discover Henan - 2026</p>
+    </footer>
+</body>
+</html>
