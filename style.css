@@ -115,6 +115,14 @@ header p {
     margin-top: 1rem;
 }
 
+.video a {
+    color: #ffd6e0;
+}
+
+.video a:visited {
+    color: white;
+}
+
 .video video,
 .video figcaption {
     display: block;
@@ -167,7 +175,7 @@ header p {
 }
 
 a {
-    color: #a0566b;
+    color: #8a4459;
 }
 
 a:visited {
@@ -184,6 +192,7 @@ a:visited {
 .trip p {
     max-width: 40rem;
     margin: 1rem auto;
+    text-align: left;
 }
 
 .button, .button:visited {
@@ -408,7 +417,7 @@ body.high-contrast {
 /*=====print style=====*/
 
 @media print {
-    nav, #contrast-toggle, .video {
+    nav, #contrast-toggle, .video, header, aside, footer, .skip-link {
         display : none;
     }
 
